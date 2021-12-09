@@ -1,17 +1,29 @@
 * {
   margin: 0;
   padding: 0;
+  /*preenchimento interno*/
   box-sizing: border-box;
+  /*box sizing altera as propriedades do box model, usada para altura e largura, border-box inclui o padding size*/
   line-height: 2rem;
-}
-:root {
-  --white: white;
-  --black: black;
-  --red: red;
+  /*expaçamento entre linhas*/
 }
 
-main {
-  background-color: var(--black);
+:root {
+  --backgroundPagina: #eaeaea;
+  --backgroundReceita: #ffffff;
+  --titulosSubtítulos: #1b1b1b;
+  --footerLegenda: #8f8f8f;
+  --outrosTextos: #39393a;
+}
+
+body {
+  background: var(--backgroundPagina);
+  font-family: 'Corinthia';
+  color: var(--outrosTextos);
+}
+
+div {
+  background: var(--backgroundReceita);
   color: var(--white);
   width: 80rem;
   right: auto;
@@ -26,12 +38,12 @@ h1 {
   line-height: 3rem;
   margin-top: 2rem;
   text-align: center;
-  color: var(--red);
+  color: var(--titulosSubtítulos);
   font-size: 50px;
 }
 
 h2 {
-  color: var(--red);
+  color: var(--titulosSubtítulos);
   text-align: center;
   font-size: 35px;
 }
@@ -62,6 +74,7 @@ ol {
 }
 
 footer {
+  color: var(--footerLegenda);
   text-align: center;
   font-size: 15px;
 }
